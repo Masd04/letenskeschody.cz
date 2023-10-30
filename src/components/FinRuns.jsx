@@ -15,7 +15,7 @@ function FinRuns() {
       <p>Cíl: shodný s kvalifikací</p>
       <p>pouze výběh schodů, bez seběhnutí</p>
       <div className={`${styles.flexCenter}`}>
-      <img src={finarun} alt="Mapa kvalifikačního běhu" className={`w-100 h-auto`}/>
+      <img src={finarun} alt="Mapa kvalifikačního běhu" className={`w-100 h-auto rounded-lg`}/>
       </div>
       
 

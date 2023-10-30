@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../style';
-import { Concept, Slogan, Rules, QualiRuns, FinRuns, Categories, Teaser, Application } from '../components';
+import { Concept, Slogan, Rules, QualiRuns, FinRuns, Categories, Teaser, Application, Footer } from '../components';
 import { bg } from '../static/img'
 
 
@@ -45,6 +45,8 @@ function Home() {
     </div>
 
     </div>
+
+    <Footer />
 
    
     </>

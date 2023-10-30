@@ -14,7 +14,7 @@ function QualiRuns() {
       <p>Délka trati: 1.140m</p>
       <p>Start a cíl: u Metronomu</p>
       <div className={`${styles.flexCenter}`}>
-      <img src={qualirun} alt="Mapa kvalifikačního běhu" className={`w-100 h-auto mt-16`}/>
+      <img src={qualirun} alt="Mapa kvalifikačního běhu" className={`w-100 h-auto mt-16 rounded-lg`}/>
       </div>
       
 
