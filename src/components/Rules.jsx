@@ -7,7 +7,7 @@ import { random } from '../static/img'
 function Rules() {
   return (
     <>
-    <div className="flex justify-evenly">
+    <div className="flex justify-evenly pb-12">
 
     <div className="flex">
 

@@ -4,7 +4,7 @@ import styles from '../style'
 function Concept() {
   return (
     <>
-    <div className="w-[50%]">
+    <div className="w-[50%] my-10 bg-white bg-opacity-70 rounded-xl px-8">
       <h1 className={`${styles.heading3}`}>Koncept</h1>
 
       <div className={`${styles.paragraph} text-left mb-5`}>

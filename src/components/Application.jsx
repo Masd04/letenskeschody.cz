@@ -33,7 +33,7 @@ function Application() {
   return (
     <>
     
-    <div className={` ${styles.flex}`}>
+    <div className={`my-10  ${styles.flex}`}>
 
       <div className={`bg-blue-500 shadow-md rounded-2xl flex-1 `}>
         
