@@ -31,3 +31,26 @@
     mask-position: center;
     
   }
+
+  .stairs-clip {
+    clip-path: polygon(
+      0 0, 
+      15% 0, /* Right to the end of the stairs on the left */
+      15% 5%, 
+      10% 5%, /* First step */
+      10% 10%, 
+      5% 10%, /* Second step */
+      5% 15%, 
+      0 15%, /* Third step */
+      0 100%, /* Down to the bottom left corner */
+      100% 100%, /* Straight to the bottom right corner */
+      100% 15%, /* Up to the start of the third step on the right */
+      95% 15%, 
+      95% 10%, /* Second step on the right */
+      90% 10%, 
+      90% 5%, /* First step on the right */
+      85% 5%, 
+      85% 0, /* Back to the top edge */
+      100% 0 /* To the top right corner */
+    );
+  }

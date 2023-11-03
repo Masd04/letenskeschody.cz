@@ -24,7 +24,7 @@ function Home() {
     <div className="">
 
     <div className="relative">
-      <div className="bg-cover absolute top-0 left-[1%] w-[98%] h-[100%] z-[-10] bg-img ellipse-clip rounded-tl-3xl rounded-tr-3xl" style={{ backgroundImage: `url(${bg})` }}></div>
+      <div className="bg-cover absolute top-0 left-[1%] w-[98%] h-[105%] z-[-10] bg-img ellipse-clip stairs-clip " style={{ backgroundImage: `url(${bg})` }}></div>
                   
       <div className="flex flex-row justify-evenly z-10">
         <Concept />
@@ -35,19 +35,19 @@ function Home() {
     
 
     <div className="relative">
-    <div className="rounded-tl-3xl rounded-tr-3xl bg-white ellipse-clip"> 
+    <div className="bg-white ellipse-clip stairs-clip"> 
     <Rules />
     </div>
     </div>
 
-    <div className="">
+    <div className="relative bg-white pt-4 stairs-clip">
     <div className="flex flex-row justify-evenly">
     <QualiRuns />
     <FinRuns />
     </div>
     </div>
 
-    <div className="rounded-tl-3xl rounded-tr-3xl bg-white pb-12"> 
+    <div className="bg-white mt-10 pt-4 pb-12 stairs-clip"> 
     <Categories />
     </div>
     

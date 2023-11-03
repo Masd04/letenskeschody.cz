@@ -35,7 +35,7 @@ function Application() {
     
     <div className={`my-10  ${styles.flex}`}>
 
-      <div className={`bg-blue-500 shadow-md rounded-2xl flex-1 `}>
+      <div className={`bg-blue-500 shadow-md rounded-2xl flex-1 mt-6`}>
         
         <div className={`${styles.heading3}`}>
           <h1>Registrace</h1>
