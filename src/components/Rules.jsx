@@ -7,7 +7,7 @@ import { random } from '../static/img'
 function Rules() {
   return (
     <>
-    <div className="flex justify-evenly pt-4 pb-12">
+    <div className="flex justify-evenly pt-4 pb-12 mb-[-1.5rem]">
 
     <div className="flex">
 
@@ -15,7 +15,7 @@ function Rules() {
 
     <div className={`${styles.paragraph} text-center`}>
       <h1 className={`${styles.heading3}`}>Pravidla</h1>
-      <div className="text-left ml-10">
+      <div className="text-left ml-10 pl-[5.2rem]">
       <p className="list-dot">JEDEN KVALIFIKAČNÍ běh pro všechny</p>
       <p className="list-dot">Běžci vybíhají jednotlivě v intervalech 15 sekund</p>
       <p className="list-dot">Během závodu je zakázán fyzický kontakt mezi závodníky</p>
