@@ -8,7 +8,7 @@ import Teaser from "./Teaser";
 import QualiRuns from "./QualiRuns";
 import FinRuns from "./FinRuns";
 import Application from "./Application";
-
+import Hero from "./Hero";
 
 
 export {
@@ -33,5 +33,6 @@ export {
     Application,
 
     
-
+    Hero,
+    
   };

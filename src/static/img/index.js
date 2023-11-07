@@ -3,6 +3,9 @@ import finarun from "./finarun.png"
 import teaser from "./teaser.mp4"
 import bg from "./bg-lighter.png"
 import random from "./random.webp"
+import schody from "./schody.png"
+import slogan from "./slogan.png"
+import slogan2 from "./slogan2.png"
 
 
 
@@ -13,5 +16,7 @@ export {
   teaser,
   bg,
   random,
-
+  schody,
+  slogan,
+  slogan2,
 };
