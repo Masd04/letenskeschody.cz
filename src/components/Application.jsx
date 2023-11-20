@@ -35,7 +35,9 @@ function Application() {
     
     <div className={`my-10  ${styles.flex}`}>
 
-      <div className={`bg-blue-500 shadow-md rounded-md flex-1 mt-6`}>
+      <div className={`bg-red-600 shadow-md rounded-md flex-1 mt-6 transition-all duration-150 [box-shadow:0px_10px_10px_1px_#f44336,0_15px_0_0_#f44336]
+                        border-b-[1px] border-red-500 active:translate-y-2 active:[box-shadow:0_0_0_0_#f44336,0_0px_0_0_#f44336]
+                        active:border-b-[0px]`}>
         
         <div className={`${styles.heading3}`}>
           <h1>Registrace</h1>

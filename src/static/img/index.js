@@ -6,6 +6,8 @@ import random from "./random.webp"
 import schody from "./schody.png"
 import slogan from "./slogan.png"
 import slogan2 from "./slogan2.png"
+import hdng from "./logowcc.png"
+import icon from "./metronom.png"
 
 
 
@@ -19,4 +21,6 @@ export {
   schody,
   slogan,
   slogan2,
+  hdng,
+  icon,
 };

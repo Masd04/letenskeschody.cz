@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../style"
 import { Link } from "react-scroll";
+import { icon } from '../static/img'
 
 function Button({text, bg, padding}) {
   return (
@@ -20,18 +21,21 @@ function Button({text, bg, padding}) {
 function Navbar() {
   return (
     <>
-    <div className="fixed left-0 right-0 top-0 h-10 shadow-md border-b-2 border-red-500 bg-red-300 z-20 flex items-center justify-center">
-      <p className="flex">SPONZOŘI + SOCKY</p>
+    <div className="fixed left-0 right-0 top-0 h-10 shadow-md border-b-2 border-gray-700 bg-gray-900 z-20 flex items-center justify-center">
+      <p className="flex text-white">SPONZOŘI + SOCKY</p>
     </div>
 
-    <div className="fixed left-0 right-0 top-10 h-16 shadow-md border-b-2 border-gray-100 bg-gray-900 z-20">
-      <nav className="flex items-center mx-auto h-full">
-        <h1 className="ml-5 font-semibold uppercase text-lg text-gray-200">
+    <div className="fixed left-0 right-0 top-10 h-20 shadow-md border-b-2 border-gray-100 bg-gray-800 z-20">
+      <nav className="flex items-center justify-between mx-auto h-full">
+        
+        <img src={icon} alt="logo akce" className="w-[9.5rem] mt-3"/>
+        
+        {/* <h1 className="ml-5 font-semibold uppercase text-lg text-gray-200">
           Výběh Letenských schodů
-        </h1>
+        </h1> */}
         <div className="flex w-[80%]">
         <div className="flex justify-end w-full">
-          <ul className="flex items-center space-x-10 text-sm font-monserrat mr-0">
+          <ul className="flex items-center space-x-10 text-sm font-monserrat mr-10">
             <li className="scale-100  hover:scale-110"><Link to="home" activeClass={`${styles.active}`} spy={true} smooth={true} offset={-112} duration={500} className="text-gray-400 hover:text-gray-100">Domů</Link></li>
             <li className="scale-100  hover:scale-110"><Link to="concept" activeClass={`${styles.active}`} spy={true} smooth={true} offset={-112} duration={500} className="text-gray-400 hover:text-gray-100">Koncept</Link></li>
             <li className="scale-100  hover:scale-110"><Link to="rules" activeClass={`${styles.active}`} spy={true} smooth={true} offset={-112} duration={500} className="text-gray-400 hover:text-gray-100">Pravidla</Link></li>
