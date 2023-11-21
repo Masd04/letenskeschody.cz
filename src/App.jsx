@@ -7,7 +7,7 @@ import styles from './style.js';
 
 function App() {
   return (
-    <Router basename={"/"}>
+    <Router basename={"/letenskeschody.cz"}>
     <div className={`pt-16 xs:pt-20 relative z-20 min-h-screen overflow-y-auto`}>
       
       <Routes>
