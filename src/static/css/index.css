@@ -9,6 +9,14 @@
     }
   }
 
+  @font-face {
+    font-family: 'Sports-Night';
+    src: url('../fonts/sports-night.ttf') format('truetype'),
+         url('../fonts/sports-night.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   /* .ellipse-overlay::before {
     content: "";
     position: absolute;
@@ -22,6 +30,19 @@
   .bg-img {
     transform: scaleX(-1);
     background-position: center -150px;
+  }
+
+  @media (max-width: 480px) { /* adjust 640px as needed */
+    .bg-zoom-small {
+      background-size: 110%;
+    }
+  }
+
+  @media (max-width: 480px) { /* adjust 640px as needed */
+    .bg-custom-position-small {
+      background-position: -7rem center;
+      background-size: 110%;
+    }
   }
 
   .ellipse-clip {

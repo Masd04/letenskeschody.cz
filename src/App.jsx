@@ -8,10 +8,10 @@ import styles from './style.js';
 function App() {
   return (
     <Router basename={"/"}>
-    <div className={`pt-20 relative z-20 min-h-screen overflow-y-auto`}>
-      <Navbar />
+    <div className={`pt-16 xs:pt-20 relative z-20 min-h-screen overflow-y-auto`}>
+      
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<><Navbar /><Home /></>} />
         <Route path="/about" element={<About />} />
       </Routes>
     </div>

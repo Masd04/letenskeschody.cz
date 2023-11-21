@@ -14,12 +14,12 @@ function Hero() {
         <div className="w-[100%] h-full bg-center bg-cover z-[-10] mt-0" style={{ backgroundImage: `url(${schody})` }}></div>
             
         <div className="absolute inset-0 flex flex-col items-center justify-top z-10">
-          <div className="mr-[0rem] mt-0">
+          {/* <div className="mr-[0rem] mt-0">
           <img className="w-[1080px] h-auto" src={hdng} alt="Slogan" />
-          </div>
+          </div> */}
 
-          <div className="ml-[0rem] mt-[0rem]">
-          <img className="w-[70rem] h-auto" src={slogan2} alt="Slogan" />
+          <div className="ml-[40rem] mt-[6rem]">
+          <img className="w-[45rem] h-auto" src={slogan2} alt="Slogan" />
           </div>
 
         </div>

@@ -9,6 +9,7 @@ import QualiRuns from "./QualiRuns";
 import FinRuns from "./FinRuns";
 import Application from "./Application";
 import Hero from "./Hero";
+import Countdown from "./Countdown";
 
 
 export {
@@ -34,5 +35,7 @@ export {
 
     
     Hero,
+
+    Countdown,
     
   };
