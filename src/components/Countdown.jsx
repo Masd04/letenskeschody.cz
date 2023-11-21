@@ -45,7 +45,7 @@ const Countdown = () => {
   });
 
   return (
-    <div className="font-monserrat font-semibold xs:text-[24px] text-[25px] text-red-600 xs:leading-[40px] leading-[30px] w-full text-center select-none p-1 xs:p-0">
+    <div className="font-monserrat font-semibold xs:text-[24px] text-[25px] text-red-600 xs:leading-[40px] leading-[30px] w-full text-center select-none p-1 xs:p-0 text-shadow">
       <div>{timeLeft.days} days {timeLeft.hours} hours</div>
         
         <div>{timeLeft.minutes} minutes {timeLeft.seconds} seconds</div>

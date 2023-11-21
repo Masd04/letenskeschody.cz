@@ -1,18 +1,19 @@
 import React from 'react'
 import styles from '../style';
 import { schody, slogan, slogan2, hdng } from '../static/img'
-import {Countdown} from '../components';
+import { Countdown } from '../components';
 import { icon } from '../static/img'
+import { Link } from 'react-router-dom';
 
 
 
 const smallScreenStyle = window.innerWidth < 480 ? { backgroundSize: '110%' } : {};
 
-function About() {
+function Landing() {
   return (
     <>
     <div className="fixed left-0 right-0 top-0 h-16 xs:h-20 shadow-md border-b-2 border-gray-700 bg-black z-20 flex items-center justify-center">
-      <a href='/'><p className="flex text-white text-xl xs:text-4xl font-sports scale-100 hover:scale-110">VYBEH LETENSKYCH SCHODU.CZ</p></a>
+      <Link to="/home"><p className="flex text-white text-xl xs:text-4xl font-sports scale-100 hover:scale-110">VYBEH LETENSKYCH SCHODU.CZ</p></Link>
     </div>
     
     
@@ -29,12 +30,12 @@ function About() {
           <img className="w-[45rem] h-auto" src={slogan2} alt="Slogan" />
           </div> */}
           <div className="mt-6">
-          <h1 className={`font-monserrat font-semibold xs:text-[68px] text-[40px] text-red-600 xs:leading-[76.8px] leading-[66.8px] w-full text-center select-nonemb-[-1.5rem]`}>KVĚTEN 2024</h1>
+          <h1 className={`font-monserrat font-semibold xs:text-[68px] text-[40px] text-red-600 xs:leading-[76.8px] leading-[66.8px] w-full text-center select-none text-shadow`}>KVĚTEN 2024</h1>
           <Countdown />
           </div>
 
           
-          <div className="hidden xs:absolute left-0">
+          <div className="hidden xs:absolute md:absolute xl:absolute left-0">
             <img src={icon} alt="logo akce" className="w-[18rem] mt-0"/>
           </div>
           <div className="absolute xs:hidden top-56">
@@ -52,11 +53,11 @@ function About() {
         </div>
 
         <div className="">
-            <a href="/"><button className={`${styles.button1} bg-white rounded-2xl px-3 xs:px-5 py-2 hover:bg-gray-300 hover:scale-105`}>
+        <Link to="/home"><button className={`${styles.button1} bg-white rounded-2xl px-3 xs:px-5 py-2 hover:bg-gray-300 hover:scale-105`}>
                 Dozvědět se více
                 
             </button>
-            </a>
+        </Link>
         </div>
         
         </div>
@@ -84,5 +85,4 @@ function About() {
   )
 }
 
-export default About
-
+export default Landing
