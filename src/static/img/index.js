@@ -5,7 +5,8 @@ import teaser from "./teaser.mp4"
 import random from "./random.webp"
 import schody from "./schody2.jpg"
 
-
+import ig from "./insta.svg"
+import fb from "./fb.svg"
 
 import icon from "./metronom.png"
 
@@ -20,7 +21,8 @@ export {
   random,
   schody,
  
-  
+  ig,
+  fb,
  
   icon,
 };

@@ -13,6 +13,7 @@ module.exports = {
 
         fontFamily: {
           monserrat: ['Montserrat', 'sans-serif'],
+          montserrat400900: ['Montserrat', 'sans-serif'],
           sports: ['Sports-Night', 'sans-serif'],
         },
       

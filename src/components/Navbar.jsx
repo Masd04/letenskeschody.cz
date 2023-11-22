@@ -26,7 +26,7 @@ function Navbar() {
     </div>
 
     <div className="fixed left-0 right-0 top-16 h-20 shadow-md border-b-2 border-gray-100 bg-white z-20">
-      <nav className="flex items-center justify-between mx-auto h-full">
+      <nav className="flex items-center justify-between mx-auto h-full select-none">
         
       <Link to="home" spy={true} smooth={true} offset={-112} duration={500}>
         <img src={icon} alt="logo akce" className="w-[9.5rem] mt-3 scale-100 hover:scale-105 cursor-pointer"/>
@@ -35,7 +35,7 @@ function Navbar() {
         
         <div className="flex w-[80%]">
         <div className="flex justify-end w-full">
-          <ul className="hidden xs:flex items-center space-x-10 text-sm font-monserrat mr-10">
+          <ul className="hidden xs:flex items-center space-x-10 text-sm font-monserrat font-bold mr-10">
             <li className="scale-100  hover:scale-110"><Link to="home" activeClass={`${styles.active}`} spy={true} smooth={true} offset={-112} duration={500} className="text-black hover:text-red-600 cursor-pointer">Domů</Link></li>
             <li className="scale-100  hover:scale-110"><Link to="concept" activeClass={`${styles.active}`} spy={true} smooth={true} offset={-130} duration={500} className="text-black hover:text-red-600 cursor-pointer">Koncept</Link></li>
             <li className="scale-100  hover:scale-110"><Link to="rules" activeClass={`${styles.active}`} spy={true} smooth={true} offset={-165} duration={500} className="text-black hover:text-red-600 cursor-pointer">Pravidla</Link></li>
