@@ -32,9 +32,7 @@ function Navbar() {
         <img src={icon} alt="logo akce" className="w-[9.5rem] mt-3 scale-100 hover:scale-105 cursor-pointer"/>
       </Link>
         
-        {/* <h1 className="ml-5 font-semibold uppercase text-lg text-gray-200">
-          Výběh Letenských schodů
-        </h1> */}
+        
         <div className="flex w-[80%]">
         <div className="flex justify-end w-full">
           <ul className="hidden xs:flex items-center space-x-10 text-sm font-monserrat mr-10">

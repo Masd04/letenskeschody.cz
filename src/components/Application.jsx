@@ -119,7 +119,7 @@ function Application() {
     {/* {message && <div className={`text-center text-2xl ${isError ? 'text-red-500' : 'text-blue-100'} text-outline tracking-widest mt-[-1em] mb-3`}><b>{message}</b></div>} */}
 
       <div className="flex items-center justify-center">
-      <button className="bg-blue-100 hover:bg-gray-300 black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline" type="submit">
+      <button className="bg-blue-100 hover:bg-gray-300 black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline scale-100 hover:scale-105" type="submit">
         Odeslat
       </button>
       </div>
