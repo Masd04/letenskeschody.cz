@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../style';
 import { schody, slogan, slogan2, hdng } from '../static/img'
+import { Link } from "react-scroll";
 
 
 
@@ -18,22 +19,27 @@ function Hero() {
           <img className="w-[1080px] h-auto" src={hdng} alt="Slogan" />
           </div> */}
 
-          <div className="ml-[40rem] mt-[6rem]">
-          <img className="w-[45rem] h-auto" src={slogan2} alt="Slogan" />
+          <div className="ml-[35rem] mt-[8rem]">
+            <h1 className={`${styles.nadpis} text-[3.5rem] text-white`}>Najdi v sobě <span className="text-red-600">ROCKYHO!</span></h1>
+          {/* <img className="w-[45rem] h-auto" src={slogan2} alt="Slogan" /> */}
           </div>
 
         </div>
 
         <div className="absolute inset-0 flex items-end justify-center z-10 pb-16 space-x-10">
         <div className="">
-            <button className={`${styles.heading3} bg-gray-200 rounded-2xl px-5 py-2 hover:bg-gray-300 hover:scale-105`}>
+          <Link to="concept" spy={true} smooth={true} offset={-112} duration={500}>
+          <button className={`${styles.heading3} bg-gray-200 rounded-2xl px-5 py-2 hover:bg-gray-300 hover:scale-105`}>
                 Dozvědět se více
-            </button>
+          </button>
+          </Link>
         </div>
         <div className="">
+            <Link to="concept" spy={true} smooth={true} offset={-112} duration={500}>
             <button className={`${styles.heading3} bg-red-500 shadow-2xl shadow-black rounded-2xl px-5 py-2 hover:bg-red-600 hover:scale-105`}>
                 Přihlásit se
             </button>
+            </Link>
         </div>
         </div>
         

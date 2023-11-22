@@ -15,7 +15,7 @@ function Home() {
 
     <div className="">
 
-    <div className="">
+    <div id='home' className="">
       {/* <div className="bg-cover absolute top-0 left-[1%] w-[98%] h-[105%] z-[-10] bg-img ellipse-clip stairs-clip " style={{ backgroundImage: `url(${bg})` }}></div>
 
       <div id='home' className="">
@@ -25,13 +25,15 @@ function Home() {
 
       <Hero />
 
+      </div>
+
     
                   
       <div  id='concept' className="flex flex-row justify-evenly z-10 bg-white stairs-clip">
         <Concept />
         <Application />
       </div>
-    </div>
+    
 
     
 

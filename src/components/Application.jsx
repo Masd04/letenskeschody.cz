@@ -40,7 +40,7 @@ function Application() {
                         active:border-b-[0px]`}>
         
         <div className={`${styles.heading3}`}>
-          <h1>Registrace</h1>
+          <h1>Přihláška</h1>
         </div>
         
         
