@@ -5,11 +5,13 @@ const styles = {
     heading2: "font-monserrat font-semibold xs:text-[50px] text-[40px] text-black xs:leading-[65.8px] leading-[66.8px] w-full text-center select-none",
     heading3: "font-monserrat font-semibold xs:text-[40px] text-[32px] text-black xs:leading-[76.8px] leading-[66.8px] w-full text-center select-none",
     nadpis: "font-monserrat font-semibold xs:leading-[76.8px] leading-[66.8px] w-full text-center select-none text-shadow",
+    nadpisMob: "font-monserrat font-semibold leading-[50px] w-full text-center select-none text-shadow",
     logoH: "font-sports text-white text-xl xs:text-4xl",
     
     paragraph: "font-poppins font-normal text-[18px] leading-[30.8px]",
     
-    button1: "font-monserrat font-semibold xs:text-[40px] text-[20px] text-black xs:leading-[76.8px] leading-[24.8px] w-full text-center select-none",
+    buttonshomeTXT: "font-monserrat font-semibold  text-[1rem] xs:text-[40px] text-black xs:leading-[76.8px] leading-[66.8px] w-full text-center select-none",
+  
     slogan: "font-poppins font-bold mb-[-3rem] xs:text-[55px] text-[40px] text-red-500 xs:leading-[50.8px] leading-[66.8px] w-full text-center select-none",
     
     
@@ -29,6 +31,15 @@ const styles = {
 
     //  ACTIVE CLASS NAVBAR
     active: 'text-red-600 border-b-2 border-red-500',
+
+
+    //  BUTTONS
+
+    button1: "font-monserrat font-semibold xs:text-[40px] text-[20px] text-black xs:leading-[76.8px] leading-[24.8px] w-full text-center select-none",
+
+    buttonsHome: "rounded-2xl px-5 py-2 hover:scale-105",
+
+
 
     
   };
