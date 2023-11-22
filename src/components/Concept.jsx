@@ -4,7 +4,7 @@ import styles from '../style'
 function Concept() {
   return (
     <>
-    <div className="w-[50%] mt-16 mb-10 bg-white bg-opacity-70 rounded-xl px-8">
+    <div className="w-[97%] xs:w-[50%] mt-16 mb-10 bg-white bg-opacity-70 rounded-xl px-8">
       <h1 className={`${styles.heading3}`}>Koncept</h1>
 
       <div className={`${styles.paragraph} text-left mb-5`}>
@@ -18,7 +18,8 @@ function Concept() {
       <p>Do závodu se může přihlásit každý milovník sportu.</p>
       <p>Nejmladší kategorie je pro děti do 13 let, závod si ale mohou zaběhnout i zkušenější závodníci.</p>
       <p>Kategorie MASTERS čeká na sportovce starší 45 let.</p>
-      <p><b>VŠICHNI ZÁVODNÍCI SE MUSÍ PŘEDEM REGISTROVAT FORMULÁŘEM ZDE <span className="ml-10">--&gt;</span></b></p>
+      <div className="hidden xs:flex"><p><b>VŠICHNI ZÁVODNÍCI SE MUSÍ PŘEDEM REGISTROVAT FORMULÁŘEM ZDE<span className="ml-10">--&gt;</span></b></p></div>
+      <div className="xs:hidden flex text-center mt-[1rem]"><p><b>VŠICHNI ZÁVODNÍCI SE MUSÍ PŘEDEM REGISTROVAT FORMULÁŘEM ZDE NA STRÁNCE</b></p></div>
       </div>
 
     </div>

@@ -13,9 +13,9 @@ function Rules() {
 
       
 
-    <div className={`${styles.paragraph} text-center`}>
+    <div className={`${styles.paragraphRules} text-center`}>
       <h1 className={`${styles.heading3}`}>Pravidla</h1>
-      <div className="text-left ml-10 pl-[5.2rem]">
+      <div className="text-left ml-0 xs:ml-10 pl-3 xs:pl-[5.2rem]">
       <p className="list-dot">JEDEN KVALIFIKAČNÍ běh pro všechny</p>
       <p className="list-dot">Běžci vybíhají jednotlivě v intervalech 15 sekund</p>
       <p className="list-dot">Během závodu je zakázán fyzický kontakt mezi závodníky</p>
@@ -32,7 +32,7 @@ function Rules() {
 
     </div>
 
-    <div className="flex justify-end">
+    <div className="hidden xs:flex justify-end">
       <img src={random} alt="" className="w-[85%] mr-10 rounded-lg"/>
     </div>
 

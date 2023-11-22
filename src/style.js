@@ -9,6 +9,7 @@ const styles = {
     logoH: "font-sports text-white text-xl xs:text-4xl",
     
     paragraph: "font-poppins font-normal text-[18px] leading-[30.8px]",
+    paragraphRules: "font-poppins font-normal text-[1.1rem] leading-[30.8px]",
     
     buttonshomeTXT: "font-monserrat font-semibold  text-[1rem] xs:text-[40px] text-black xs:leading-[76.8px] leading-[66.8px] w-full text-center select-none",
   
