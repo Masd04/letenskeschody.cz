@@ -3,40 +3,23 @@ import styles from "../style"
 import { Link } from "react-scroll";
 import { icon } from '../static/img'
 
-function Button({text, bg, padding}) {
-  return (
-    <div>
-      <button
-        className={`
-          ${padding || 'px-6 py-2'} text-sm font-semibold uppercase 
-          rounded-sm text-white transition ${bg}`}
-      >
-        <span>{text}</span>
-      </button>
-    </div>
-  );
-}
+
 
 
 function Navbar() {
 
   const [activeSection, setActiveSection] = useState('');
 
-  useEffect(() => {
-    const onScroll = () => {
-      // Assuming you have a way to determine the current section,
-      // for example, using the window scroll position.
-      const currentSection = determineCurrentSection();
-      setActiveSection(currentSection);
-    };
-  
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+
+  const handleLinkClick = () => {
+    setTimeout(() => {
+      setActiveSection(determineCurrentSection());
+    }, 500); // Delay may need adjustment
+  };
 
   const determineCurrentSection = () => {
     const sections = ['home', 'concept', 'rules', 'runs', 'categories'];
-    const currentScrollPos = window.scrollY + window.innerHeight / 2; // Adjust this if necessary
+    const currentScrollPos = window.scrollY + window.innerHeight / 2;
   
     for (const sectionId of sections) {
       const sectionEl = document.getElementById(sectionId);
@@ -51,11 +34,6 @@ function Navbar() {
     return ''; // Default if no section is active
   };
 
-  const handleLinkClick = (sectionId) => {
-    setTimeout(() => {
-      setActiveSection(determineCurrentSection());
-    }, 500); // Delay may need adjustment
-  };
 
   const debounce = (func, delay) => {
     let inDebounce;
@@ -72,8 +50,12 @@ function Navbar() {
       setActiveSection(determineCurrentSection());
     }, 100);
   
-    window.addEventListener('scroll', debouncedHandleScroll);
-    return () => window.removeEventListener('scroll', debouncedHandleScroll);
+    const onScroll = () => {
+      debouncedHandleScroll();
+    };
+  
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   
