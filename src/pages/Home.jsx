@@ -1,10 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from '../style';
 import { Concept, Slogan, Rules, QualiRuns, FinRuns, Categories, Teaser, Application, Footer, Hero } from '../components';
+import { useLocation } from 'react-router-dom';
 
 
 
 function Home() {
+
+  const SCROLL_OFFSET = -130;
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo === 'concept') {
+      const section = document.getElementById('concept');
+      if (section) {
+        const sectionTop = section.getBoundingClientRect().top;
+        const offsetPosition = sectionTop + window.pageYOffset + SCROLL_OFFSET;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
+}, [location]);
+
+
+
   return (
     <>
 

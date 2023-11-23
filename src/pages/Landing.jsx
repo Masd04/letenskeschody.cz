@@ -3,13 +3,21 @@ import styles from '../style';
 import { schody } from '../static/img'
 import { Countdown } from '../components';
 import { icon } from '../static/img'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 const smallScreenStyle = window.innerWidth < 480 ? { backgroundSize: '110%' } : {};
 
 function Landing() {
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/home', { state: { scrollTo: 'concept' } });
+  };
+
+
   return (
     <>
     <div className="fixed left-0 right-0 top-0 h-16 xs:h-20 shadow-md border-b-2 border-gray-700 bg-black z-20 flex items-center justify-center">
@@ -41,11 +49,11 @@ function Landing() {
 
         <div className="absolute inset-0 flex flex-col xs:flex-row items-center xs:items-end justify-end xs:justify-center z-10 pb-16 space-x-1 xs:space-x-10 space-y-3 xs:space-y-0 mx-4">
         <div className="">
-          <Link to="/home">
-            <button className={`${styles.button1} bg-red-500 shadow-2xl shadow-black rounded-2xl px-10 xs:px-5 py-2 hover:bg-red-600 hover:scale-105`}>
+          
+            <button onClick={handleButtonClick} className={`${styles.button1} bg-red-500 shadow-2xl shadow-black rounded-2xl px-10 xs:px-5 py-2 hover:bg-red-600 hover:scale-105`}>
                 Přihlásit se
             </button>
-          </Link>
+          
         </div>
 
         <div className="">
