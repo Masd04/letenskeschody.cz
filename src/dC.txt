@@ -209,3 +209,54 @@ export default Landing
     </div>
   );
 }
+
+
+
+// NAVlinks
+
+<div className="flex w-[80%]">
+        <div className="flex justify-end w-full">
+          <ul className="hidden xs:flex items-center space-x-10 text-sm font-monserrat font-bold mr-10">
+            <li className={`scale-100 hover:scale-110 ${activeSection === 'home' ? styles.active : ''}`}><Link to="home" onClick={() => handleLinkClick('home')} spy={true} smooth={true} offset={-112} duration={500} className="text-black hover:text-red-600 cursor-pointer">Domů</Link></li>
+            <li className={`scale-100 hover:scale-110 ${activeSection === 'concept' ? styles.active : ''}`}><Link to="concept" onClick={() => handleLinkClick('concept')} spy={true} smooth={true} offset={-130} duration={500} className="text-black hover:text-red-600 cursor-pointer">Koncept</Link></li>
+            <li className={`scale-100 hover:scale-110 ${activeSection === 'rules' ? styles.active : ''}`}><Link to="rules" onClick={() => handleLinkClick('rules')} spy={true} smooth={true} offset={-165} duration={500} className="text-black hover:text-red-600 cursor-pointer">Pravidla</Link></li>
+            <li className={`scale-100 hover:scale-110 ${activeSection === 'runs' ? styles.active : ''}`}><Link to="runs" onClick={() => handleLinkClick('runs')} spy={true} smooth={true} offset={-165} duration={500} className="text-black hover:text-red-600 cursor-pointer">Tratě</Link></li>
+            <li className={`scale-100 hover:scale-110 ${activeSection === 'categories' ? styles.active : ''}`}><Link to="categories" onClick={() => handleLinkClick('categories')} spy={true} smooth={true} offset={-150} duration={500} className="text-black hover:text-red-600 cursor-pointer">Kategorie</Link></li>
+            <li className="scale-100  hover:scale-110"><Link to="/" activeClass={`${styles.active}`} spy={true} smooth={true} offset={-112} duration={500} className="text-black hover:text-red-600 cursor-pointer">Harmonogram</Link></li>
+            <li className="scale-100  hover:scale-110"><Link to="/" activeClass={`${styles.active}`} spy={true} smooth={true} offset={-112} duration={500} className="text-black hover:text-red-600 cursor-pointer">Kontakt</Link></li>
+          </ul>
+        </div>
+        </div>
+
+
+  // CSS styles
+  
+    /* .ellipse-overlay::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background: radial-gradient(circle at center, transparent 0%, #ffffff 100%);
+    z-index: 1;
+  } */
+  
+  .bg-img {
+    transform: scaleX(-1);
+    background-position: center -150px;
+  }
+
+  @media (max-width: 480px) { /* adjust 640px as needed */
+    .bg-zoom-small {
+      background-size: 110%;
+    }
+  }
+
+  @media (max-width: 480px) { /* adjust 640px as needed */
+    .bg-custom-position-small {
+      background-position: -7rem center;
+      background-size: 110%;
+    }
+  }
+

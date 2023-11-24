@@ -17,33 +17,7 @@
     font-style: normal;
   }
 
-  /* .ellipse-overlay::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 10%;
-    background: radial-gradient(circle at center, transparent 0%, #ffffff 100%);
-    z-index: 1;
-  } */
-  .bg-img {
-    transform: scaleX(-1);
-    background-position: center -150px;
-  }
 
-  @media (max-width: 480px) { /* adjust 640px as needed */
-    .bg-zoom-small {
-      background-size: 110%;
-    }
-  }
-
-  @media (max-width: 480px) { /* adjust 640px as needed */
-    .bg-custom-position-small {
-      background-position: -7rem center;
-      background-size: 110%;
-    }
-  }
 
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);

@@ -10,6 +10,9 @@ import fb from "./fb.svg"
 
 import icon from "./metronom.png"
 
+import menu from "./mmenu.svg"
+import close from "./close.svg"
+
 
 
 
@@ -25,4 +28,7 @@ export {
   fb,
  
   icon,
+
+  menu,
+  close,
 };
