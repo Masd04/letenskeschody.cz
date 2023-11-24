@@ -26,7 +26,7 @@ function Landing() {
     
     
     <div className="relative h-[90vh] max-w-[100%] rounded-b-lg overflow-hidden mt-0">
-        <div className="relative xs:hidden w-[100%] h-full bg-left xs:bg-center bg-cover z-[-10] mt-0" style={{ backgroundImage: `url(${schody})`, backgroundPosition: '-7rem center'}}></div>
+        <div className={`relative xs:hidden w-[100%] h-full bg-left xs:bg-center bg-cover z-[-10] mt-0`} style={{ backgroundImage: `url(${schody})`, backgroundPosition: '-7rem center'}}></div>
         <div className="hidden xs:block w-[100%] h-full bg-left xs:bg-center bg-cover z-[-10] mt-0" style={{ backgroundImage: `url(${schody})`}}></div>
             
         <div className="absolute inset-0 flex flex-col items-center justify-top z-10">

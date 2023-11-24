@@ -49,6 +49,9 @@ const styles = {
     footerImg: "w-10 xs:w-20 scale-100 hover:scale-110 cursor-pointer",
 
 
+    
+
+
 
     
   };

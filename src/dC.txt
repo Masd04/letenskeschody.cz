@@ -230,7 +230,7 @@ export default Landing
 
 
   // CSS styles
-  
+
     /* .ellipse-overlay::before {
     content: "";
     position: absolute;
@@ -259,4 +259,9 @@ export default Landing
       background-size: 110%;
     }
   }
+
+
+
+
+  
 
