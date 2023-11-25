@@ -33,7 +33,7 @@ function Hero() {
         <div className="absolute inset-0 flex items-end justify-center z-10 pb-16 space-x-5 xs:space-x-10">
 
         <div className="">
-            <Link to="concept" spy={true} smooth={true} offset={-112} duration={500}>
+            <Link to="appl" spy={true} smooth={true} offset={-135} duration={500}>
             <button className={`${styles.buttonshomeTXT} ${styles.buttonsHome} bg-red-500 shadow-2xl shadow-black hover:bg-red-600`}>
                 Přihlásit se
             </button>
@@ -41,7 +41,7 @@ function Hero() {
         </div>
 
         <div className="">
-          <Link to="concept" spy={true} smooth={true} offset={-112} duration={500}>
+          <Link to="concept" spy={true} smooth={true} offset={-160} duration={500}>
           <button className={`${styles.buttonshomeTXT} ${styles.buttonsHome} bg-gray-200 hover:bg-gray-300`}>
                 Dozvědět se více
           </button>

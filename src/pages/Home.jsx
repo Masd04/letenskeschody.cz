@@ -7,23 +7,24 @@ import { useLocation } from 'react-router-dom';
 
 function Home() {
 
-  const SCROLL_OFFSET = -130;
+  const SCROLL_OFFSET = -140;
 
   const location = useLocation();
 
   useEffect(() => {
-    if (location.state?.scrollTo === 'concept') {
-      const section = document.getElementById('concept');
+    const target = location.state?.scrollTo;
+    if (target) {
+      const section = document.getElementById(target);
       if (section) {
         const sectionTop = section.getBoundingClientRect().top;
         const offsetPosition = sectionTop + window.pageYOffset + SCROLL_OFFSET;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     }
-  }
-}, [location]);
+  }, [location]);
 
 
 
@@ -44,9 +45,9 @@ function Home() {
 
     
                   
-      <div  id='concept' className="flex flex-col xs:flex-row justify-evenly z-10 bg-white xs:stairs-clip">
-        <Concept />
-        <Application />
+      <div className="flex flex-col xs:flex-row justify-evenly z-10 bg-white xs:stairs-clip">
+        <Concept id='concept' />
+        <Application id='appl' />
       </div>
     
 

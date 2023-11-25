@@ -14,6 +14,10 @@ function Landing() {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
+    navigate('/home', { state: { scrollTo: 'appl' } });
+  };
+
+  const handleButtonClick1 = () => {
     navigate('/home', { state: { scrollTo: 'concept' } });
   };
 
@@ -57,11 +61,11 @@ function Landing() {
         </div>
 
         <div className="">
-        <Link to="/home"><button className={`${styles.button1} bg-white rounded-2xl px-3 xs:px-5 py-2 hover:bg-gray-300 hover:scale-105`}>
+            <button onClick={handleButtonClick1} className={`${styles.button1} bg-white rounded-2xl px-3 xs:px-5 py-2 hover:bg-gray-300 hover:scale-105`}>
                 Dozvědět se více
                 
             </button>
-        </Link>
+        
         </div>
         
         </div> 

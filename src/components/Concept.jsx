@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from '../style'
 
-function Concept() {
+function Concept({  id  }) {
   return (
     <>
-    <div className="w-[97%] xs:w-[50%] mt-16 mb-10 bg-white bg-opacity-70 rounded-xl px-8">
+    <div id={id} className="w-[97%] xs:w-[50%] mt-16 mb-10 bg-white bg-opacity-70 rounded-xl px-8">
       <h1 className={`${styles.heading3}`}>Koncept</h1>
 
       <div className={`${styles.paragraphConc} text-left mb-5`}>

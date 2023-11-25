@@ -87,7 +87,7 @@ function Navbar() {
 
     const navLinks = [
       {path: "home", text: "Domů", offset: -112 },
-      {path: "concept", text: "Koncept", offset: -130 },
+      {path: "concept", text: "Koncept", offset: -160 },
       {path: "rules", text: "Pravidla", offset: -165 },
       {path: "runs", text: "Tratě", offset: -165 },
       {path: "categories", text: "Kategorie", offset: -150 },
