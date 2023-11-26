@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import styles from '../style';
 import { schody } from '../static/img'
 import { Countdown } from '../components';
@@ -6,10 +6,23 @@ import { icon } from '../static/img'
 import { Link, useNavigate } from 'react-router-dom';
 
 
-
-const smallScreenStyle = window.innerWidth < 480 ? { backgroundSize: '110%' } : {};
-
 function Landing() {
+
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoadingScreenClick = () => {
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 6400); //  how long you want the animation to last
+
+    return () => clearTimeout(timer);
+  }, []);
+
 
   const navigate = useNavigate();
 
@@ -24,6 +37,15 @@ function Landing() {
 
   return (
     <>
+
+      {isLoading && (
+        <div className="loading-screen" onClick={handleLoadingScreenClick}>
+          <img src={icon} alt="logo akce" className="loading-icon mt-6"/>
+        </div>
+      )}
+
+
+
     <div className="fixed left-0 right-0 top-0 h-16 xs:h-20 shadow-md border-b-2 border-gray-700 bg-black z-20 flex items-center justify-center">
       <Link to="/home"><p className={`${styles.logoH} flex scale-100 hover:scale-105`}>VYBEH LETENSKYCH SCHODU.CZ</p></Link>
     </div>

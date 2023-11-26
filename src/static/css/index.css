@@ -53,3 +53,31 @@
       100% 0 /* To the top right corner */
     );
   }
+
+
+  .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    animation: fadeOut 6s forwards;
+    animation-delay: 1s;
+    user-select: none;
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  .loading-icon {
+    width: 10rem; /* Adjust size as needed */
+  }
