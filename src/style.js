@@ -13,7 +13,7 @@ const styles = {
     paragraphConc: "font-montserrat400900 font-normal text-[18px] leading-[25.8px] xs:leading-[30.8px]",
     paragraphRules: "font-montserrat400900 font-normal text-[1.1rem] leading-[25.8px] xs:leading-[30.8px] mt-5 xs:mt-0",
     paragraphFooter: "font-montserrat400900 font-normal leading-[15.8px] xs:leading-[24.8px] text-[0.6rem] xs:text-[1rem]",
-    paragraphQuali: "font-montserrat400900 font-bold text-[1.5rem] leading-[38.8px] xs:leading-[45.8px]",
+    paragraphQuali: "font-montserrat400900 font-bold text-[1.47rem] leading-[38.8px] xs:leading-[45.8px] text-center",
 
     buttonshomeTXT: "font-monserrat font-semibold  text-[1rem] xs:text-[40px] text-black xs:leading-[76.8px] leading-[66.8px] w-full text-center select-none",
   

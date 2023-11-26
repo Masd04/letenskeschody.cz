@@ -91,8 +91,8 @@ function Navbar() {
       {path: "rules", text: "Pravidla", offset: -165 },
       {path: "runs", text: "Tratě", offset: -165 },
       {path: "categories", text: "Kategorie", offset: -150 },
-      {path: "/", text: "Harmonogram", offset: -112 },
-      {path: "/", text: "Kontakt", offset: -112 },
+      /* {path: "/", text: "Harmonogram", offset: -112 },
+      {path: "/", text: "Kontakt", offset: -112 }, */
     ];
 
   

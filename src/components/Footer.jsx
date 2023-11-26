@@ -42,7 +42,9 @@ function Footer() {
 
       </div>
 
-      
+      <div className="flex justify-center pt-8 bg-black">
+        <p className="text-white font-monserrat text-[0.6rem]">Website created by David Mašek</p>
+      </div>
 
       </div>
     </>
