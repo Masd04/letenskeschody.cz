@@ -81,9 +81,7 @@ function Navbar() {
     setToggle((prev) => !prev);
     }
 
-    const handleNavLinkClick = () => {
-    setToggle(false);
-    }
+    
 
     const navLinks = [
       {path: "home", text: "Domů", offset: -112 },
@@ -94,6 +92,8 @@ function Navbar() {
       /* {path: "/", text: "Harmonogram", offset: -112 },
       {path: "/", text: "Kontakt", offset: -112 }, */
     ];
+
+    
 
   
   return (
