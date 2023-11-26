@@ -43,7 +43,7 @@ function Footer() {
       </div>
 
       <div className="flex justify-center pt-8 bg-black">
-        <p className="text-white font-monserrat text-[0.6rem]">© Website created by David Mašek</p>
+        <p className="text-white font-monserrat text-[0.6rem]">© Website created by <span className="hover:font-extrabold"><a href="https://masd04.github.io/Portfolio/" target="_blank"><u>David Mašek</u></a></span></p>
       </div>
 
       </div>
